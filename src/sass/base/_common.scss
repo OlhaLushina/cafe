@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "Film P3 Bold";
+    src: url("../fonts/FontsFree-Net-FilmP3Bold") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+    
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 }
