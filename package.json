@@ -10,7 +10,9 @@
   "keywords": [],
   "author": "Olha Lushina <olga.lushina.ua@gmail.com>",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.14.4",
     "@parcel/transformer-sass": "^2.14.4",
+    "@parcel/transformer-webmanifest": "^2.14.4",
     "parcel": "^2.14.4",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^2.0.1"
