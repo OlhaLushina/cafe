@@ -1,3 +1,23 @@
-.header {
-    
+.header-logo {
+    font-family: "Film P3 Bold";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-link {
+    color: var(--primary-text-color);
 }
