@@ -1,4 +1,4 @@
-@import './utils/module';
-@import './base/module';
-@import './components/module';
-@import './layouts/module';
+@forward './utils/module';
+@forward './base/module';
+@forward './components/module';
+@forward './layouts/module';

@@ -1,3 +1,6 @@
+@use '../utils/module' as utils;
+
+
 /*-------- Заголовок секции ----------------*/
 .section-title {
     margin-bottom: 30px;
@@ -9,7 +12,7 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     
-    @include desktop {
+    @include utils.desktop {
         margin-bottom: 50px;
 
         font-size: 36px;

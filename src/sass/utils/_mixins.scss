@@ -1,20 +1,22 @@
+@use './vars';
+
 @mixin mobile {
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: vars.getBreakpoint('mobile')) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: vars.getBreakpoint('tablet')) {
     @content;
   }
 }
-
 @mixin desktop {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: vars.getBreakpoint('desktop')) {
     @content;
   }
 }
+  
 
 @mixin retina {
   @media (min-device-pixel-ratio: 2),

@@ -1,3 +1,5 @@
+@use '../utils/module' as utils;
+
 /*---- Модальное окно -----*/
 .backdrop {
     position: fixed;
@@ -34,11 +36,11 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: scroll;
 
-    @include mobile {
+    @include utils.mobile {
         width: 460px;
     }
 
-    @include desktop {
+    @include utils.desktop {
         width: 528px;
     }
 }
@@ -83,7 +85,7 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 
-    @include desktop {
+    @include utils.desktop {
         line-height: 1.15;
     }
 }

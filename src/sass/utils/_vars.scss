@@ -1,14 +1,30 @@
+@use "sass:map";
+
 :root {
+    /* Colors */
     --primary-text-color: #757575;
-    --accent-color: #F3C653;
+    --accent-color: #C79002;
+    --accent-hover-color: #F3C653;
+
     --primary-white-color: #FFFFFF;
     --primary-black-color: #494848;
 
     --dark-bg-color: #7A7A7A; 
     --grey-bg-color: #7A7A7A;
     --light-bg-color: #BABABA;
-    --accent-bg-color: #C79002;
     --address-text-color: #E5E5E5;
 
     --hero-gradient-color: rgba(0, 0, 0, 0.65);
+ }
+
+/* Breakpoints */
+$breakpoints: (
+    'mobile': 414px,
+    'tablet': 1024px,
+    'desktop': 1280px
+);
+
+@function getBreakpoint($device) {
+    @return map.get($breakpoints, $device); 
 }
+
