@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use './vars';
 
 @mixin mobile {
@@ -28,4 +29,16 @@
 
 @mixin calc-width($count, $gap) {
   width: calc((100% - $gap * ($count - 1)) / $count);
+}
+
+
+/* Convert px to rem */
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16)+rem;
+  }
+
+  @else {
+    @error 'Some rem mixin error...';
+  }
 }
