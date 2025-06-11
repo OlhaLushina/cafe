@@ -1,4 +1,16 @@
-/*-----------------Герой-----------------*/
+@use '../utils/module' as utils;
+
 .hero {
-   
+    padding-top: 181px;
+    padding-bottom: 20px;
+
+    @include utils.tablet {
+        padding-top: 188px;
+        padding-bottom: 15px;
+    }
+    
+    @include utils.desktop {
+        padding-top: 164px;
+        padding-bottom: 64px;
+    }
 }

@@ -1,5 +1,10 @@
 @use "sass:map";
 
+@font-face {
+    font-family: "Film P3 Bold";
+    src: url("../fonts/FilmP3Bold.ttf");
+}
+
 :root {
     /* Colors */
     --primary-text-color: #757575;
@@ -15,6 +20,10 @@
     --address-text-color: #E5E5E5;
 
     --hero-gradient-color: rgba(0, 0, 0, 0.65);
+
+    /* Fonts */
+    --logo-font: "Film P3 Bold", sans-serif;
+    --primary-font: 'Montserrat', sans-serif;
  }
 
 /* Breakpoints */

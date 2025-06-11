@@ -1,31 +1,96 @@
-.header-logo {
-    font-family: "Film P3 Bold";
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
+@use '../utils/module' as utils;
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    @include utils.tablet {
+        padding-top: 24px;
+        padding-bottom: 33px;
+    }
 }
 
 .header-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    //outline: 2px solid red;
 }
 
-.header-nav-item {
+.header-logo {
+    font-family: var(--logo-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    text-decoration: none;
+
+    @include utils.tablet {
+        font-size: 40px;
+    }
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-nav-item:nth-child(2n):not(:last-child) {
+    margin-right: 14px;
+}
+
+.header-nav-item-phone {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+    border: 1px solid transparent;
+
+    @include utils.tablet {
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+        color: var(--primary-white-color);
+    }
 }
 
 .header-nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02rem;
     color: var(--accent-color);
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        color: var(--accent-hover-color);
+    @include utils.tablet {
+        font-size: 20px;
+    }
+}
+
+.header-nav-link-phone {
+    display: none;
+
+    @include utils.tablet {
+        display: block;
+        margin-left: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.2 rem;
+        color: var(--primary-white-color);
+        text-decoration: none;
     }
 }
 
@@ -33,9 +98,4 @@
     width: 24px;
     height: 24px;
     fill: var(--accent-color);
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-hover-color);
-    }
 }
