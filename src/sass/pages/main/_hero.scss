@@ -37,6 +37,7 @@
 }
 
 .hero-main-title {
+    margin-top: 70px;
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 96px;
@@ -44,18 +45,39 @@
     letter-spacing: 0.3rem;
     color: var(--primary-white-color);
     text-align: center;
+    text-transform: uppercase;
+
+    @include utils.tablet {
+        margin-top: 88px;
+        font-size: 128px;
+    }
+
+    @include utils.desktop {
+        margin-top: 64px;
+    }
 }
 
 .hero-main-subtitle {
+    margin-top: 24px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0.02rem;
     color: var(--primary-white-color);
     text-align: center;
+
+    @include utils.tablet {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    @include utils.desktop {
+        margin-top: 32px;
+    }
 }
 
 .hero-main-text {
+    margin-top: 40px;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 32px;
@@ -63,4 +85,14 @@
     letter-spacing: 0.05rem;
     color: var(--primary-white-color);
     text-align: center;
+    text-transform: uppercase;
+
+    @include utils.tablet {
+        margin-top: 56px;
+        font-size: 36px;
+    }
+
+    @include utils.desktop {
+        margin-top: 64px;
+    }
 }

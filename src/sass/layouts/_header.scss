@@ -94,12 +94,31 @@
     }
 }
 
-.icon-phone {
+.header-phone-icon {
     width: 24px;
     height: 24px;
     fill: var(--accent-color);
 }
 
+/* Social links in header */
+.header-social-list {
+    display: none;
+
+    @include utils.desktop {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+}
+
+.header-social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
+}
+
+
+/* Address in header */
 .header-adress-link {
     text-decoration: none;
 
