@@ -1,4 +1,5 @@
 @use '../utils/module' as utils;
+@import 'modern-normalize';
     
 body {
     font-family: var(--primary-font);

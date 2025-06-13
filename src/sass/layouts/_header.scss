@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //outline: 2px solid red;
 }
 
 .header-logo {
@@ -52,7 +51,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
@@ -60,6 +58,8 @@
     border: 1px solid transparent;
 
     @include utils.tablet {
+        padding: 8px;
+        
         border: 1px solid var(--accent-color);
         border-radius: 2px;
         color: var(--primary-white-color);
@@ -97,5 +97,42 @@
 .icon-phone {
     width: 24px;
     height: 24px;
+    fill: var(--accent-color);
+}
+
+.header-adress-link {
+    text-decoration: none;
+
+    @include utils.tablet {
+        display: none;
+    }
+}
+
+.header-address {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-address-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    padding: 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+}
+
+.address-text {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.01rem;
+    color: var(--address-text-color);
+}
+
+.icon-adress {
+    width: 20px;
+    height: 20px;
     fill: var(--accent-color);
 }
