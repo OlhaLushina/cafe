@@ -1,10 +1,16 @@
 @use '../utils/module' as utils;
 
 .hero {
+    max-width: 100%;
+    height: 740px;
     padding-top: 181px;
-    padding-bottom: 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @include utils.tablet {
+        height: 720px;
         padding-top: 188px;
         padding-bottom: 15px;
     }
@@ -13,4 +19,155 @@
         padding-top: 164px;
         padding-bottom: 64px;
     }
+}
+
+.hero-main-title {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    color: var(--primary-white-color);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include utils.tablet {
+        font-size: 128px;
+    }
+}
+
+.hero-main-subtitle {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    text-align: center;
+
+    @include utils.tablet {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    @include utils.desktop {
+        margin-top: 32px;
+    }
+}
+
+.hero-main-text {
+    margin-top: 40px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: var(--primary-white-color);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include utils.tablet {
+        margin-top: 56px;
+        font-size: 36px;
+    }
+
+    @include utils.desktop {
+        margin-top: 64px;
+    }
+}
+
+/* Address and buttons */
+.wrap-address-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 113px;
+
+    @include utils.tablet {
+        margin-top: 137px;
+    }
+}
+
+/* Address */
+.hero-adress-link {
+    display: none;
+
+    @include utils.tablet {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.hero-address {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-address-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+}
+
+.hero-address-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: var(--address-text-color);
+    text-align: left;
+}
+
+.hero-address-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
+}
+
+/* Buttons */
+.wrap-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin: 0 auto;
+
+    @include utils.tablet {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    @include utils.tablet {
+        gap: 60px;
+    }
+}
+
+/* Social links in hero */
+.hero-social-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 58px;
+
+    @include utils.tablet {
+        margin-top: 25px;
+    }
+
+    @include utils.desktop {
+        display: none;
+    }
+}
+
+.hero-social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
 }
