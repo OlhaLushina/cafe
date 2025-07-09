@@ -31,6 +31,10 @@
     }
 }
 
+.about-reverse .about-subtitle {
+    text-align: right;
+}
+
 .about-title {
     margin-top: 12px;
     font-family: var(--logo-font);
@@ -46,12 +50,54 @@
     }
 }
 
-.about-block-1 {
-    position: relative;
+.about-reverse .about-title { 
+    text-align: right;
 }
 
-.about-text-1 {
+.about-block-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include utils.tablet {
+        flex-direction: row;
+    }
+}
+
+.about-reverse .about-block-1 {
+    @include utils.tablet {
+        flex-direction: row-reverse;
+    }
+}
+
+.about-block-1-wrap {
     max-width: 258px;
+
+    @include utils.tablet {
+        max-width: 439px;
+    }
+
+    @include utils.desktop {
+        max-width: 518px;
+    }
+}
+
+.about-reverse .about-block-1-wrap {
+    max-width: 242px;
+    margin-left: auto;
+    margin-right: 0;
+    
+    @include utils.tablet {
+        max-width: 419px;
+    }
+    
+    @include utils.desktop {
+        max-width: 488px;
+    }
+}
+
+
+.about-text-1 {
     margin-top: 12px;
     font-family: var(--primary-font);
     font-weight: 600;
@@ -61,13 +107,8 @@
     color: var(--dark-bg-color);
     
     @include utils.tablet {
-        max-width: 439px;
         margin-top: 24px;
         font-size: 16px;
-    }
-
-    @include utils.desktop {
-        max-width: 518px;
     }
 }
 
@@ -79,7 +120,7 @@
 
     @include utils.tablet {
         position: absolute;
-        top: -286px;
+        top: -153px;
         right: 0;
         max-width: 400px;
         margin-top: 0;
@@ -87,6 +128,15 @@
 
     @include utils.desktop {
         max-width: 460px;
+    }
+}
+
+.about-reverse .about-image-1 {
+    margin-left: 0;
+    margin-right: auto;
+
+    @include utils.tablet {
+        left: 0;
     }
 }
 
@@ -105,6 +155,10 @@
         gap: 32px;
         margin-top: 162px;
     }
+}
+
+.about-reverse .about-block-2 {
+    justify-content: flex-end;
 }
 
 .about-text-2 {
