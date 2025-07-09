@@ -2,18 +2,18 @@
 @use './vars';
 
 @mixin mobile {
-  @media screen and (min-width: vars.getBreakpoint('mobile')) {
+  @media screen and (min-width: vars.getBreakpoint('mobile', 'width')) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: vars.getBreakpoint('tablet')) {
+  @media screen and (min-width: vars.getBreakpoint('tablet', 'width')) {
     @content;
   }
 }
 @mixin desktop {
-  @media screen and (min-width: vars.getBreakpoint('desktop')) {
+  @media screen and (min-width: vars.getBreakpoint('desktop', 'width')) {
     @content;
   }
 }

@@ -2,27 +2,27 @@
 
 .container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: utils.getBreakpoint('mobile', 'padding-lr');
+    padding-right: utils.getBreakpoint('mobile', 'padding-lr');
     margin: 0 auto;
     box-sizing: border-box;
 
     @include utils.mobile {
-      max-width: utils.getBreakpoint('mobile');
+      max-width: utils.getBreakpoint('mobile', 'width');
       color: red;
     }
 
     @include utils.tablet {
-      max-width: utils.getBreakpoint('tablet');
-      padding-left: 47px;
-      padding-right: 47px;
+      max-width: utils.getBreakpoint('tablet', 'width');
+      padding-left: utils.getBreakpoint('tablet', 'padding-lr');
+      padding-right: utils.getBreakpoint('tablet', 'padding-lr');
       color: green;
     }
 
     @include utils.desktop {
-      max-width: utils.getBreakpoint('desktop');
-      padding-left: 85px;
-      padding-right: 85px;
+      max-width: utils.getBreakpoint('desktop', 'width');
+      padding-left: utils.getBreakpoint('desktop', 'padding-lr');
+      padding-right: utils.getBreakpoint('desktop', 'padding-lr');
       color: blue;
     }
 }

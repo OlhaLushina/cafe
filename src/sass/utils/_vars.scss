@@ -15,12 +15,13 @@
     --primary-black-color: #494848;
 
     --dark-bg-color: #7A7A7A; 
-    --grey-bg-color: #7A7A7A;
     --light-bg-color: #BABABA;
+
     --address-text-color: #E5E5E5;
+    --subtitle-color: #B4B4B4;
 
     --footer-bg-color: #0E0C07;
-    --contacts-bg-color: #FFFDEE;
+    --about-bg-color: #FFFDEE;
 
     --hero-gradient-color: rgba(0, 0, 0, 0.65);
 
@@ -35,12 +36,21 @@
 
 /* Breakpoints */
 $breakpoints: (
-    'mobile': 414px,
-    'tablet': 1024px,
-    'desktop': 1280px
+    'mobile': (
+        'width': 414px,
+        'padding-lr': 15px
+    ),
+    'tablet': (
+        'width': 1024px,
+        'padding-lr': 47px
+    ),
+    'desktop': (
+        'width': 1280px,
+        'padding-lr': 85px
+    )
 );
 
-@function getBreakpoint($device) {
-    @return map.get($breakpoints, $device); 
+@function getBreakpoint($device, $property) {
+    @return map.get(map.get($breakpoints, $device), $property); 
 }
 
