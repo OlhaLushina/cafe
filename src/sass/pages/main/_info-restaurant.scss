@@ -6,27 +6,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: var(--hero-gradient), url(../images/mobile/homepage/info-restaurant-bg.jpg);
+    background-image: var(--hero-gradient), url(../images/mobile/main/info-restaurant-bg.jpg);
     
     @include utils.retina {
-        background-image: var(--hero-gradient), url(../images/mobile/homepage/info-restaurant-bg-2x.jpg);
+        background-image: var(--hero-gradient), url(../images/mobile/main/info-restaurant-bg-2x.jpg);
     }
 
     @include utils.tablet {
         height: 620px;
 
-        background-image: var(--hero-gradient), url(../images/tablet/homepage/info-restaurant-bg.jpg);
+        background-image: var(--hero-gradient), url(../images/tablet/main/info-restaurant-bg.jpg);
         
         @include utils.retina {
-            background-image: var(--hero-gradient), url(../images/tablet/homepage/info-restaurant-bg-2x.jpg);
+            background-image: var(--hero-gradient), url(../images/tablet/main/info-restaurant-bg-2x.jpg);
         }
     }
 
     @include utils.desktop {
-        background-image: var(--hero-gradient), url(../images/desktop/homepage/info-restaurant-bg.jpg);
+        background-image: var(--hero-gradient), url(../images/desktop/main/info-restaurant-bg.jpg);
     
         @include utils.retina {
-            background-image: var(--hero-gradient), url(../images/desktop/homepage/info-restaurant-bg-2x.jpg);
+            background-image: var(--hero-gradient), url(../images/desktop/main/info-restaurant-bg-2x.jpg);
         }
     }
 }

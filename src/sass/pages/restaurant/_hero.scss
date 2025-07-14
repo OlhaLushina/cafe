@@ -1,0 +1,25 @@
+@use '../../utils/module' as utils;
+
+.hero-restaurant {
+    background-image: var(--hero-gradient), url(../images/mobile/restaurant/hero.jpg);
+
+    @include utils.retina {
+        background-image: var(--hero-gradient), url(../images/mobile/restaurant/hero-2x.jpg);
+    }
+
+    @include utils.tablet {
+        background-image: var(--hero-gradient), url(../images/tablet/restaurant/hero.jpg);
+
+        @include utils.retina {
+            background-image: var(--hero-gradient), url(../images/tablet/restaurant/hero-2x.jpg);
+        }
+    }
+
+    @include utils.desktop {
+        background-image: var(--hero-gradient), url(../images/desktop/restaurant/hero.jpg);
+
+        @include utils.retina {
+            background-image: var(--hero-gradient), url(../images/desktop/restaurant/hero-2x.jpg);
+        }
+    }
+}

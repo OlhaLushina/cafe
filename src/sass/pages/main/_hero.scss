@@ -1,25 +1,25 @@
 @use '../../utils/module' as utils;
 
 .hero-main {
-    background-image: var(--hero-gradient), url(../images/mobile/homepage/hero.jpg);
+    background-image: var(--hero-gradient), url(../images/mobile/main/hero.jpg);
     
     @include utils.retina {
-        background-image: var(--hero-gradient), url(../images/mobile/homepage/hero-2x.jpg);
+        background-image: var(--hero-gradient), url(../images/mobile/main/hero-2x.jpg);
     }
 
     @include utils.tablet {
-        background-image: var(--hero-gradient), url(../images/tablet/homepage/hero.jpg);
+        background-image: var(--hero-gradient), url(../images/tablet/main/hero.jpg);
 
         @include utils.retina {
-            background-image: var(--hero-gradient), url(../images/tablet/homepage/hero-2x.jpg);   
+            background-image: var(--hero-gradient), url(../images/tablet/main/hero-2x.jpg);   
         }
     }
 
     @include utils.desktop {
-        background-image: var(--hero-gradient), url(../images/desktop/homepage/hero.jpg);
+        background-image: var(--hero-gradient), url(../images/desktop/main/hero.jpg);
 
         @include utils.retina {
-            background-image: var(--hero-gradient), url(../images/desktop/homepage/hero-2x.jpg);  
+            background-image: var(--hero-gradient), url(../images/desktop/main/hero-2x.jpg);  
         }
     }
 }
