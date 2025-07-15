@@ -1,0 +1,51 @@
+@use '../../utils/module' as utils;
+
+.hotel-room {
+    @include utils.tablet {
+        min-height: 600px;
+    }
+
+    @include utils.desktop {
+        min-height: 650px;
+    }
+}
+
+.hotel-room.about-reverse {
+    background-color: var(--menu-bg-color);
+}
+
+.hotel-room-title {
+    margin-top: 32px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: var(--primary-black-color);
+
+    @include utils.tablet {
+        margin-top: 62px;
+        font-size: 30px;
+    }
+
+    @include utils.desktop {
+        margin-top: 72px;
+        font-size: 36px;
+    }
+}
+
+.hotel-room-desc {
+    margin-top: 12px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--dark-bg-color);
+    
+    @include utils.tablet {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+
+}
