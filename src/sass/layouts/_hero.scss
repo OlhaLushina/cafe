@@ -79,7 +79,7 @@
 }
 
 /* Address and buttons */
-.wrap-address-and-buttons {
+.hero .wrap-address-and-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,7 +134,7 @@
 }
 
 /* Buttons */
-.wrap-buttons {
+.hero .wrap-buttons {
     display: flex;
     flex-direction: column;
     gap: 24px;

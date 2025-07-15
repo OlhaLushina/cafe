@@ -13,6 +13,7 @@
 
     --primary-white-color: #FFFFFF;
     --primary-black-color: #494848;
+    --menu-black-color: #000000;
 
     --dark-bg-color: #7A7A7A; 
     --light-bg-color: #BABABA;
@@ -22,6 +23,8 @@
 
     --footer-bg-color: #0E0C07;
     --about-bg-color: #FFFDEE;
+    --menu-bg-color: #F0ECD6;
+    --button-dark-bg-color: #000000;
 
     --hero-gradient-color: rgba(0, 0, 0, 0.65);
 
@@ -32,6 +35,9 @@
 
     /* Gradients */
     --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+
+    /* Transitions */
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 /* Breakpoints */

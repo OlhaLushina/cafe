@@ -1,0 +1,135 @@
+@use '../../utils/module' as utils;
+
+.menu {
+    background: var(--about-bg-color);
+
+    @include utils.tablet {
+        background: var(--menu-bg-color);
+    }
+}
+
+.menu-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include utils.tablet {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @include utils.tablet {
+        padding-bottom: 60px;
+    }
+}
+
+.menu-title {
+    margin-bottom: 32px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: var(--menu-black-color);
+
+    @include utils.tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.menu-wrap-tables {
+    display: flex;
+    flex-direction: column;
+
+    @include utils.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 90px;
+    }
+}
+
+.menu-table {
+    color: var(--menu-black-color);
+}
+
+.menu-dish-category-title {
+    padding-bottom: 16px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0em;
+
+    @include utils.tablet {
+        padding-bottom: 20px;
+    }
+
+    @include utils.desktop {
+        font-size: 24px;
+    }
+}
+
+.menu-dish-title {
+    padding-right: 30px;
+    padding-bottom: 4px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @include utils.desktop {
+        font-size: 16px;
+    }
+}
+
+.menu-dish-description {
+    padding-right: 30px;
+    padding-bottom: 8px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @include utils.desktop {
+        padding-bottom: 12px;
+    }
+}
+
+.menu-dish-weight {
+    width: 20%;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    vertical-align: center;
+}
+
+.menu-dish-price {
+    width: 20%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    vertical-align: center;
+
+    @include utils.desktop {
+        font-size: 16px;
+    }
+}
+
+.menu .btn-order-menu {
+    display: block;
+    margin: 32px auto 0;
+
+    @include utils.tablet {
+        margin: 41px 0 0 auto;
+    }
+
+    @include utils.desktop {
+        margin: 32px 0 0 auto;   
+    }
+}
